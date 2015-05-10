@@ -12,6 +12,6 @@ par(mfrow = c(1, 1), mar = c(5.1 4.1 4.1 2.1))
 hist(powercons2$Global_active_power, col = "red", main = "Global Active Power",
      xlab = "Global Active Power (kilowatts)")
 
-## Copy my plot to a PNG file
+## Copy plot to a PNG file
 dev.copy(png, file = "./ExData_Plotting1/plot1.png")  
 dev.off()
