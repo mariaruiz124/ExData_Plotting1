@@ -10,6 +10,8 @@ powercons2 <- subset(powercons, as.character(powercons$Date) %in% c("2007-02-01"
 ## Create histogram
 par(mfrow = c(1, 1), mar = c(5.1 4.1 4.1 2.1))
 hist(powercons2$Global_active_power, col = "red", main = "Global Active Power",
-     xlab = "Global Active Power (kilowatts)")#, breaks = 100)
-dev.copy(png, file = "geyserplot.png")  ## Copy my plot to a PNG file
+     xlab = "Global Active Power (kilowatts)")
+
+## Copy my plot to a PNG file
+dev.copy(png, file = "./ExData_Plotting1/plot1.png")  
 dev.off()
